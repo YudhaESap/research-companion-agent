@@ -25,33 +25,46 @@ This project serves as an early step toward fully agentic, reproducible, and pri
 ```bash
 git clone https://github.com/YudhaESap/research-companion-agent.git
 cd research-companion-agent
+```
 
 ### 2. Create a virtual environment
 
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install openai
+```
 
 ### 3. Set your OpenAI API key (do not hardcode it)
+
+```bash
 export OPENAI_API_KEY="your_api_key_here"
+```
 
 ### 4. Run the demos
 ## Generate a Haiku
 
+```bash
 python3 haiku_test.py
+```
 
 ## Example output:
 
+```bash
 Mist on quiet dawn
 soft light in morning hush still
 breath of a new day
+```
 
 ## Research Information Extraction
 
+```bash
 python3 research_agent_test.py
+```
 
 ## Example output:
 
+```bash
 {
   "study_design": "Prospective cohort study",
   "sample_size": 150,
@@ -64,14 +77,17 @@ python3 research_agent_test.py
   },
   "key_outcomes": "Association between depression and cancer outcomes"
 }
+```
 
 ## Repository Structure
 
+```bash
 research-companion-agent/
 ├── haiku_test.py              # GPT-5-nano creative reasoning test
 ├── research_agent_test.py     # Research information extraction demo
 ├── .gitignore                 # Safe ignore rules for Python + OpenAI
 └── README.md                  # Project documentation
+```
 
 ## Scientific Motivation
 
@@ -94,7 +110,7 @@ This repository is released under the MIT License.
 
 ## Citation
 
-## If you use this project or adapt its workflow for academic or open research, please cite as:
+If you use this project or adapt its workflow for academic or open research, please cite as:
 
 Saputra, Y. E. (2025). Research Companion Agent: A Lightweight Framework for Automated Study Extraction Using GPT-5.
 GitHub repository: https://github.com/YudhaESap/research-companion-agent
